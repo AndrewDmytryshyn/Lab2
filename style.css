@@ -1,0 +1,80 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 80%;
+}
+th,
+td {
+  text-align: center;
+  width: 150px;
+  height: 10px;
+  padding: 15px 0px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.first-tr td {
+  background-color: #018f8f;
+  color: #a2ffe9;
+  transition: all 0.3s ease;
+}
+.first-tr td:hover {
+  background-color: #f5f501;
+  color: #000000;
+}
+
+.second-tr td {
+  background-color: #f5f501;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.second-tr td:hover {
+  background-color: #018f8f;
+  color: #a2ffe9;
+}
+
+.figure {
+  position: relative;
+  background-color: #cfcfcf;
+  width: 100px;
+  height: 300px;
+  display: block;
+  margin: 50px auto;
+  border-radius: 15px;
+  border: 2px solid #000;
+}
+.first-part {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  top: 10%;
+  border: 2px solid #000;
+}
+.second-part {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 238, 0);
+  top: 40%;
+  border: 2px solid #000;
+}
+.third-part {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(30, 182, 0);
+  top: 70%;
+  border: 2px solid #000;
+}
