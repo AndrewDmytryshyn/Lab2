@@ -3,7 +3,7 @@ th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
-  width: 80%;
+  width: 70%;
 }
 th,
 td {
@@ -13,9 +13,8 @@ td {
   padding: 15px 0px;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
-
 .first-tr td {
-  background-color: #088f8f;
+  background-color: #018f8f;
   color: #a2ffe9;
   transition: all 0.3s ease;
 }
@@ -23,20 +22,16 @@ td {
   background-color: #f5f501;
   color: #000000;
 }
-
 .second-tr td {
   background-color: #f5f501;
   color: #000000;
   transition: all 0.3s ease;
 }
-
 .second-tr td:hover {
   background-color: #018f8f;
   color: #a2ffe9;
 }
-
-.figure {
-  position: relative;
+.figure, .figure-second {
   background-color: #cfcfcf;
   width: 100px;
   height: 300px;
@@ -45,7 +40,12 @@ td {
   border-radius: 15px;
   border: 2px solid #000;
 }
-.first-part {
+.figure{
+   position: relative;
+}
+.first-part:not(.second),
+.second-part:not(.second),
+.third-part:not(.second) {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -56,25 +56,29 @@ td {
   top: 10%;
   border: 2px solid #000;
 }
-.second-part {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  left: 50%;
-  transform: translateX(-50%);
+.second-part:not(.second) {
   background-color: rgb(255, 238, 0);
   top: 40%;
-  border: 2px solid #000;
 }
+.third-part:not(.second) {
+  background-color: rgb(30, 182, 0);
+  top: 70%;
+}
+.figure-second .first-part,
+.second-part,
 .third-part {
-  position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgb(30, 182, 0);
-  top: 70%;
+  transform: translate(44%, 50%);
+  background-color: red;
   border: 2px solid #000;
+}
+.figure-second .second-part {
+  transform: translate(44%, 120%);
+  background-color: rgb(255, 238, 0);
+}
+.figure-second .third-part {
+  transform: translate(44%, 190%);
+  background-color: rgb(30, 182, 0);
 }
